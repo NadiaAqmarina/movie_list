@@ -22,7 +22,7 @@ class DetailMovie extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.indigo[900],
         elevation: 0,
         leading: GestureDetector(
           onTap: () {
@@ -31,7 +31,7 @@ class DetailMovie extends StatelessWidget {
           },
           child: Icon(
             Icons.arrow_back_ios_rounded,
-            color: Colors.indigo[900],
+            color: Colors.white,
             size: 28,
           ),
         ),
@@ -40,14 +40,14 @@ class DetailMovie extends StatelessWidget {
               onPressed: () {},
               icon: Icon(
                 Icons.favorite_rounded,
-                color: Colors.indigo[900],
+                color: Colors.white,
                 size: 28,
               )),
           IconButton(
               onPressed: () {},
               icon: Icon(
                 Icons.share_rounded,
-                color: Colors.indigo[900],
+                color: Colors.white,
                 size: 28,
               ))
         ],
@@ -77,7 +77,7 @@ class DetailMovie extends StatelessWidget {
                             Text(
                               originalTitle,
                               style: GoogleFonts.montserrat(
-                                  fontSize: 23.0,
+                                  fontSize: 20.0,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.black),
                             ),
@@ -106,19 +106,19 @@ class DetailMovie extends StatelessWidget {
                               ],
                             ),
                             SizedBox(
-                              height: 16.0,
+                              height: 8.0,
                             ),
                             Text(
                               "Popularity: $popularity",
                               style: GoogleFonts.montserrat(
-                                  fontSize: 14.0,
+                                  fontSize: 12.0,
                                   fontWeight: FontWeight.w400,
                                   color: Colors.grey[800]),
                             ),
                             Text(
                               "Vote count: $voteCount",
                               style: GoogleFonts.montserrat(
-                                  fontSize: 14.0,
+                                  fontSize: 12.0,
                                   fontWeight: FontWeight.w400,
                                   color: Colors.grey[800]),
                             ),
@@ -145,7 +145,7 @@ class DetailMovie extends StatelessWidget {
                       Text(
                         'Release Date',
                         style: GoogleFonts.montserrat(
-                            fontSize: 20.0,
+                            fontSize: 16.0,
                             fontWeight: FontWeight.w600,
                             color: Colors.black),
                       ),
@@ -155,7 +155,7 @@ class DetailMovie extends StatelessWidget {
                       Text(
                         releaseDate,
                         style: GoogleFonts.montserrat(
-                            fontSize: 16.0,
+                            fontSize: 12.0,
                             fontWeight: FontWeight.w400,
                             color: Colors.grey[800]),
                       ),
@@ -167,7 +167,7 @@ class DetailMovie extends StatelessWidget {
                       Text(
                         'Overview',
                         style: GoogleFonts.montserrat(
-                            fontSize: 20.0,
+                            fontSize: 16.0,
                             fontWeight: FontWeight.w600,
                             color: Colors.black),
                       ),
@@ -177,7 +177,7 @@ class DetailMovie extends StatelessWidget {
                       Text(
                         overview,
                         style: GoogleFonts.montserrat(
-                            fontSize: 16.0,
+                            fontSize: 12.0,
                             fontWeight: FontWeight.w400,
                             color: Colors.grey[800]),
                       ),
